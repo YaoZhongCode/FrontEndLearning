@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning exercise</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav-bar{
+            width: 400px;
+            height: 60px;
+            background-color: #333;
+            margin: 0 auto;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-btn{
+            margin: 10px;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        .nav-btn:hover{
+            background-color: yellow;
+            color: black;
+            box-shadow: -5px 5px 10px rgb(225, 206, 206);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-btn">
+            首页
+        </div>
+        <div class="nav-btn">
+            设置
+        </div>
+    </div>
+</body>
+</html>

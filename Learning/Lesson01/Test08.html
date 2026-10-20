@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .product-card{
+            width: 240px;
+            height: 320px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid #eee;
+            cursor: pointer;
+            transition: box-shadow 0.3s, background-color 0.3s;
+        }
+        .product-card:hover{
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: rgb(225, 217, 217);
+        }
+
+        .img-box{
+            width: 200px;
+            height: 140px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 140px;
+        }
+
+        .title{
+            font-size: 18px;
+            color: #333;
+        }
+
+        .buy-btn{
+            width: 200px;
+            height: 36px;
+            background-color: #ff4d4f;
+            color: white;
+            text-align: center;
+            line-height: 36px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <div class="img-box">
+            商品图片
+        </div>
+        <div class="title">
+            无线蓝牙耳机
+        </div>
+        <div class="buy-btn">
+            立即购买
+        </div>
+    </div>
+</body>
+</html>

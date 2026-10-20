@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .stat-card{
+            width: 200px;
+            height: 160px;
+            background-color: #ffffff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .stat-card:hover{
+            transform:translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .number{
+            color: #1890ff;
+            font-size: 32px;
+        }
+
+        .label{
+            color: #666666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="stat-card">
+        <div class="number">
+            1280
+        </div>
+        <div class="label">
+            今日访问量
+        </div>
+    </div>
+</body>
+</html>

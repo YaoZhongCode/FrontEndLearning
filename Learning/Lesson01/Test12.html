@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .news-card{
+            width: 320px;
+            height: 70px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .news-card:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 12px 10px black;
+        }
+
+        .hot-tag{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 36px;
+            height: 18px;
+            background-color: #ff4d4f;
+            color: white;
+            font-size: 10px;
+            text-align: center;
+            line-height: 18px;
+            border-radius: 8px 0 8px 0;
+        }
+
+        .title{
+            width: 280px;
+            font-size: 14px;
+            color: #333333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="news-card">
+        <div class="hot-tag">
+            热门
+        </div>
+        <div class="title">
+            这是一条非常非常非常非常非常非常非常非常长的新闻标题内容
+        </div>
+    </div>
+</body>
+</html>

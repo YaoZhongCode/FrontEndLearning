@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .msg-card{
+            width: 80px;
+            height: 80px;
+            background-color: #f5f5f5;
+            border-radius: 16px;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 80px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .msg-card:hover{
+            background-color: #ffffff;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgb(46, 46, 46);
+        }
+
+        .badge{
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            width: 22px;
+            height: 22px;
+            background-color: #ff4d4f;
+            color: white;
+            font-size: 12px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 22px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="msg-card">
+        消息
+        <div class="badge">
+            9
+        </div>
+    </div>
+</body>
+</html>

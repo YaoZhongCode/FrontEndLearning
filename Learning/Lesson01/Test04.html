@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning</title>
+
+    <style>
+        *{
+            border: 0;
+            margin: 0;
+        }
+
+        .box{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: gray;
+            text-align: center;
+            line-height: 200px;
+            margin: 0 auto;
+        }
+
+        .link-btn{
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            background-color: green;
+        }
+
+        .avatar{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: red;
+
+            /*因为文字偏移，所以加了以下属性来调整成好看一点的*/
+            font-size: 10px;
+            line-height: 80px;
+            text-align: center;
+
+        }
+
+        .card{
+            height: 100px;
+            width: 100px;
+            margin: 0 auto;
+            box-shadow: 4px 4px 8px black;
+            background-color: gray;
+        }
+
+        .btn{
+            width: 100px;
+            margin: 20px auto;
+            background-color: green;
+            transition: background-color 0.3s;
+        }
+        .btn:hover{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        盒子
+    </div>
+
+    <span class="link-btn">
+        按钮
+    </span>
+     <span class="link-btn">
+        按钮
+    </span>
+
+    <div class="avatar">
+        头像
+    </div>
+
+    <div class="card">
+        卡片
+    </div>
+
+    <div class="btn">
+        悬停变色
+    </div>
+</body>
+</html>

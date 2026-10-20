@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .user-card{
+            width: 500px;
+            height: 100px;
+            background-color: #f5f5f5;
+            border-radius: 12px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .user-card:hover{
+            background-color: white;
+            box-shadow: 5px 5px 8px gray;
+        }
+
+        .avatar{
+            width: 60px;
+            height: 60px;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .info{
+            width: 200px;
+            height: 40px;
+            background-color: blue;
+            color: white;
+            border-radius: 6px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="user-card">
+        <div class="avatar">
+            头像
+        </div>
+        <div class="info">
+            查看详情
+        </div>
+    </div>
+
+</body>
+</html>
