@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            width: 280px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            margin: 50px auto;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .card:hover{
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        .img-box{
+            width: 100%;
+            height: 160px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px 12px 0 0;
+        }
+        /* 真实图片样式 */
+        .card-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 保证图片等比例裁剪填充，不拉伸变形 */
+            display: block;    /* 消除 img 底部默认缝隙 */
+            transition: transform 0.5s;
+        }
+        .card:hover .card-img{
+            transform: scale(1.1);
+        }
+        .tag{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-size: 12px; /* 修正：补上 px */
+            border-radius: 4px;
+            padding: 4px 8px;
+            z-index: 2;
+        }
+        .content{
+            width: 100%;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .title{
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .describe{
+            font-size: 13px;
+            color: #888888;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="img-box">
+            <!-- 使用网络真实图片 -->
+            <img class="card-img" src="https://picsum.photos/400/300" alt="封面图片">
+            <div class="tag">精选</div>
+        </div>
+        <div class="content">
+            <div class="title">CSS3 进阶实战：掌握现代 Web 前端 UI 布局技巧</div>
+            <div class="describe">包含 Flex 布局、定位与动画过渡...</div>
+        </div>
+    </div>
+</body>
+</html>
