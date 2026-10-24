@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning 19</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar{
+            width: 700px;
+            height: 60px;
+            background-color: #ffffff;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            margin: 40px auto;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 0 20px;
+        }
+        .logo{
+            width: 80px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #1890ff;
+            text-align: center;
+        }
+        .search-box{
+            flex: 1;
+            display: flex;
+            height: 36px;
+            border: 1px solid #d9d9d9;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .search-input{
+            flex: 1;
+            padding: 0 12px;
+            font-size: 13px;
+            color: #999999;
+            align-items: center;
+        }
+        .search-btn{
+            font-size: 13px;
+            cursor: pointer;
+            width: 70px;
+            height: 100%;
+            background-color: #1890ff;
+            color:white;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .search-btn:hover{
+            background-color: #096dd9;
+        }
+        .avatar{
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .avatar img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            SHOP
+        </div>
+        <div class="search-box">
+            <input class="search-input" type="text" placeholder="搜索商品或品牌...">
+            <button class="search-btn">搜索</button>
+        </div>
+        <div class="avatar">
+            <img src="Images/avatar.jpg" alt="头像">
+        </div>
+    </div>
+</body>
+</html>
