@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning 20</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input, button{
+            border: none;
+            outline: none;
+            background: none;
+        }
+
+        .post-card{
+            width: 360px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e8e8e8;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            gap: 12px;
+        }
+
+        .author-bar{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .author-avatar{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .author-avatar img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .author-info{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 2px;
+        }
+        .name{
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+        .time{
+            font-size: 12px;
+            color: #999;
+        }
+        .follow-btn button{
+            width: 60px;
+            height: 28px;
+            background-color: #1890ff;
+            color: #ffffff;
+            font-size: 12px;
+            border-radius: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .follow-btn button:hover{
+            background-color: #096dd9;
+        }
+        .follow-btn button:active{
+            transform: scale(0.92);
+        }
+
+        .post-content{
+            font-size: 14px;
+            color: #444;
+            line-height: 1.5;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .action-bar{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .comment-input{
+            flex: 1;
+            height: 34px;
+            background-color: #f5f5f5;
+            border-radius: 17px;
+            padding: 0 12px;
+            font-size: 13px;
+        }
+        .send-btn{
+            height: 34px;
+            padding: 0 16px;
+            background-color: #ff4d4f;
+            color: #ffffff;
+            font-size: 13px;
+            border-radius: 17px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .send-btn:hover{
+            background-color: #cf1322;
+        }
+        .send-btn:active{
+            transform: scale(0.92);
+        }
+    </style>
+</head>
+<body>
+    <div class="post-card">
+        <div class="author-bar">
+            <div class="author-avatar">
+                <img src="Images/avatar.jpg" alt="头像">
+            </div>
+            <div class="author-info">
+                <div class="name">阿一</div>
+                <div class="time">2小时前</div>
+            </div>
+            <div class="follow-btn">
+                <button>关注</button>
+            </div>
+        </div>
+        <div class="post-content">
+            Lisa推出”丁字裤“周边，炸裂全网！Lisa的新专辑《PRESS PLAY》上线后，真正引爆话题的并非音乐本身，而是一条售价25美元的官方周边丁字裤。
+        </div>
+        <div class="action-bar">
+            <input class="comment-input" type="text" placeholder="写下你的评论...">
+            <button class="send-btn">发送</button>
+        </div>
+    </div>
+</body>
+</html>
