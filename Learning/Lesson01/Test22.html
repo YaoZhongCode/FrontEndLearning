@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning 22</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .message-item{
+            width: 380px;
+            height: 64px;
+            background-color: #ffffff;
+            border: 1px solid #f0f0f0;
+            border-radius: 8px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .message-item:hover{
+            background-color: #fafafa;
+        }
+        .avatar-wrapper{
+            width: 44px;
+            height: 44px;
+            position: relative;
+            flex-shrink: 0;
+        }
+        .avatar-wrapper::after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #52c41a;
+            border:2px solid #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .avatar-wrapper img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        .main-info{
+            min-width: 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .name-row{
+            display: flex;
+            align-items: center;
+        }
+        .name{
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+        .name::after{
+            content: '';
+            width: 1px;
+            height: 10px;
+            display: inline-block;
+            background-color: #333;
+            margin: 0 8px;
+        }
+        .tag{
+            font-size: 12px;
+            color: gray;
+        }
+        .preview{
+            font-size: 13px;
+            color: gray;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .time{
+            font-size: 12px;
+            color: #bfbfbf;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-item">
+        <div class="avatar-wrapper">
+            <img src="Images/avatar02.jpg" alt="头像">
+        </div>
+        <div class="main-info">
+            <div class="name-row">
+                <div class="name">阿一</div>
+                <div class="tag">VIP会员</div>
+            </div>
+            <div class="preview">Hello, 你好，今晚有空吗？我们一起去过万圣节派对，地址就在我们经常去的那个商场里举办万圣节派对哦。</div>
+        </div>
+        <div class="time">
+            20:09
+        </div>
+    </div>
+</body>
+</html>
