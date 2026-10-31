@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning 24</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --card-radius:10px;
+            --primary-color:#1890ff;
+        }
+        .grid-container{
+            width: 600px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 16px;
+        }
+        .card{
+            height: 120px;
+            background-color: #ffffff;
+            border: 1px solid #eee;
+            border-top: 3px solid transparent;
+            border-radius: var(--card-radius);
+            transition: all 0.3s;
+            text-align: center;
+            line-height: 120px;
+            font-size: 15px;
+            color: #333;
+        }
+        .card:hover{
+            transform: translateY(-4px);
+            box-shadow: 0 8px 8px #333;
+            border-top: 3px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="card">
+            卡片1
+        </div>
+        <div class="card">
+            卡片2
+        </div>
+        <div class="card">
+            卡片3
+        </div>
+        <div class="card">
+            卡片4
+        </div>
+        <div class="card">
+            卡片5
+        </div>
+        <div class="card">
+            卡片6
+        </div>
+    </div>
+</body>
+</html>
