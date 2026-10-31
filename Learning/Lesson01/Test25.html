@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning 25</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --primary-color:#1890ff;
+            --card-radius:10px;
+        }
+        .dashboard{
+            width: 600px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 16px;
+            margin: 20px auto;
+        }
+        .main-card{
+            grid-column: span 2;
+            height: 120px;
+            border: 1px solid #eee;
+            border-top: 3px solid transparent;
+            border-radius: var(--card-radius);
+            text-align: center;
+            line-height: 120px;
+            transition: all 0.3s;
+        }
+        .main-card:hover{
+            transform: translateY(-4px);
+            border-top: 3px solid var(--primary-color);
+            box-shadow: 0 8px 8px #333;
+        }
+        .side-card{
+            height: 120px;
+            transition: all 0.3s;
+            border: 1px solid #eee;
+            border-top: 3px solid transparent;
+            border-radius: var(--card-radius);
+            text-align: center;
+            line-height: 120px;
+        }
+        .side-card:hover{
+            transform: translateY(-4px);
+            border-top: 3px solid var(--primary-color);
+            box-shadow: 0 8px 8px #333;
+        }
+        .banner-card{
+            height: 80px;
+            grid-column: 1 / -1;
+            background-color: #e6f7ff;
+            text-align: center;
+            line-height: 80px;
+            border-radius: var(--card-radius);
+        }
+        .sub-card{
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            border: 1px solid #eee;
+            border-radius: var(--card-radius);
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="main-card">
+            主数据卡
+        </div>
+        <div class="side-card">
+            快捷卡
+        </div>
+        <div class="banner-card">
+            横幅通栏
+        </div>
+        <div class="sub-card">
+            底部常规卡
+        </div>
+    </div>
+</body>
+</html>
