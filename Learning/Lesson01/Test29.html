@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning 29</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --card-bg:#ffffff;
+            --primary-color:#1890ff;
+        }
+        .fit-container{
+            max-width: 600px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 16px;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 16px;
+        }
+        .card{
+            height: 100px;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid #eee;
+            border-top: 3px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .card:hover{
+            border-top: 3px solid var(--primary-color);
+            transform: translateY(-4px);
+            box-shadow: 0 3px 2px #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="fit-container">
+        <div class="card">
+            卡片1
+        </div>
+        <div class="card">
+            卡片2
+        </div>
+    </div>
+</body>
+</html>
