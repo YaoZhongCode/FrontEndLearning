@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning 30</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        button{
+            border: none;
+            outline: none;
+            background: none;
+        }
+        :root{
+            --bg-main:#f5f7fa;
+            --card-bg:#ffffff;
+            --primary:#1890ff;
+            --success:#52c41a;
+            --border-color: #e8e8e8;
+            --bd-radius-item: 10px;
+        }
+        .dashboard-wrapper{
+            max-width: 840px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--bg-main);
+            border-radius: 14px;
+            border: 1px solid var(--border-color);
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        }
+        .hero-metric{
+            grid-column: 1 / -1;
+            height: 100px;
+            background-color: var(--card-bg);
+            border-radius: var(--bd-radius-item);
+            border: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 24px;
+        }
+        .title{
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+        }
+        .status{
+            font-size: 13px;
+            color: gray;
+        }
+        .status::before{
+            content: '';
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: var(--success);
+            margin-right: 6px;
+        }
+        .sub-metric{
+            height: 110px;
+            background-color: var(--card-bg);
+            border-radius: var(--bd-radius-item);
+            border: 1px solid var(--border-color);
+            border-top: 3px solid transparent;
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .sub-metric:hover{
+            border-top: 3px solid var(--primary);
+            transform: translateY(-4px);
+            box-shadow: 0 3px 2px #333;
+        }
+        .action-bar{
+            grid-column: 1 /-1;
+            height: 56px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px;
+        }
+        .export-btn{
+            background-color: var(--primary);
+            width: 40px;
+            height: 26px;
+            color: white;
+            border-radius: 8px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .export-btn:hover{
+            background-color: #0d63b5;
+        }
+        .export-btn:active{
+            transform: scale(0.90);
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <div class="hero-metric">
+            <div class="title">总营业额：¥128,900</div>
+            <div class="status">系统正常running</div>
+        </div>
+        <div class="sub-metric">
+            <div>新增用户</div>
+            <div>213</div>
+        </div>
+        <div class="sub-metric">
+            <div>今日订单</div>
+            <div>382,445</div>
+        </div>
+        <div class="action-bar">
+            <div>快捷导出</div>
+            <button class="export-btn">导出</button>
+        </div>
+    </div>
+</body>
+</html>
